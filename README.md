@@ -1,7 +1,7 @@
 <p style="font-size:15px" align="center">
-  [Objective](#objective) •
-  [Run it](#run-it) •
-  [Working steps](#working-steps) •
+  <a href="#objective">Objective </a> •
+  <a href="#run-it">Run it </a> •
+  <a href="#working-steps">Working steps </a>
 </p>
 
 # Objective
@@ -17,25 +17,25 @@ Create a few tests for a popular end-to-end testing framework known as [Cypress]
 
 4. This screen will show to you, choose "E2E testing" (note that it will take some time to load), then "Configuration Files" will be added to your project, after finishing the files, it will show to you which browser you want to test on, I went with Edge.
 
-<center>
+<p align="center">
 <img src="./usedImages/cypressLandingPage.png" />
-</center>
+</p>
 
-5. It will open new browser window that you can create new empty spec from, it will prompet a message to create file but will add examples along the file in the same folder `./cypress/e2e`
+5. It will open new browser window that you can create new empty spec from, it will prompt a message to create file but will add examples along the file in the same folder `./cypress/e2e`
 
-<center>
+<p align="center">
 <img src="./usedImages/browserTest_landingPage.png" />
-</center>
+</p>
 
 6. Move the `Butopea.cy.js` file to `./cypress/e2e` folder, then run it.
 
-<center>
+<p align="center">
 <img src="./usedImages/testResult.png" title="test result"/>
-</center>
+</p>
 
-As you can see on the left side, the test passed all the requirements.
+ As you can see on the left side, the test passed all the requirements.
 
-<center>
+<p align="center">
 Log requirement that is mentioned in test work case
 
 (required from first screenshot with details)
@@ -43,7 +43,7 @@ Log requirement that is mentioned in test work case
 
 (required from second screenshot with details)
 <img src="./usedImages/secondScreenshotReq.png" title="test result"/>
-</center>
+</p>
 
 # Working Steps
 Getting to work with a site that have much divs in it, was a new approach for me, also having more than class name identifier and I wouldn't work with the whole class name, but only choose one unique in it, like trying to get the child element in the `cy.get('div[class*="product-listing"]'` while class tag itself have more than one. 
