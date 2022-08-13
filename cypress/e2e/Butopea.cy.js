@@ -3,9 +3,9 @@ describe('check component\'s text', () => {
     cy.visit('https://butopea.com')
   })
   it("check if image exists, then output the url for it", () => {
-    cy.get('[class="banner-square-column p0 col-xs-12 col-md-4 relative"][style="order:3"]').find("a").find(".banner-square-wrapper").find(".banner-square-image").then(($ele) => {
+    cy.get('div[class="banner-square-image"]').eq(1).then(($ele) => {
       if ($ele.children('img').length > 0) {
-        cy.log($ele.children('img').attr('src'))
+        cy.log("https://butopea.com" +$ele.children('img').attr('src'))
       } else {
         throw new Error("test fails here")
       }
@@ -24,7 +24,7 @@ describe('check component\'s text', () => {
   });
 })
 describe('check list of products', () => {
-  it('load the site', () => {
+  it('load the site and click on a topbar button', () => {
     cy.visit('https://butopea.com');
     cy.get('button[class="secondary-font no-wrap"]').eq(2).click();
   })

@@ -1,0 +1,22 @@
+{
+  "name": "t2_scrapbutopea",
+  "version": "1.0.0",
+  "description": "<p style=\"font-size:15px\" align=\"center\">   [Objective](#objective) •   [Run it](#run-it) •   [Working steps](#working-steps) • </p>",
+  "main": "Butopea.cy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahelsamahy/T2_scrapButopea.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahelsamahy/T2_scrapButopea/issues"
+  },
+  "homepage": "https://github.com/Ahelsamahy/T2_scrapButopea#readme",
+  "devDependencies": {
+    "cypress": "^10.4.0"
+  }
+}
